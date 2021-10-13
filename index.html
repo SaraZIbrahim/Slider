@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="main.css">
+      <script src="main.js"></script>
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="back-ground" id="back-ground">
+         <div class="container">
+            <div class="buttons">
+               <button class="fr">Button</button>
+               <button class="sc">Button</button>
+            </div>
+            <div class="slider">
+               <img class="slide" name="slide"/>
+               <ul>
+                  <li onclick="prev()">&#10148;</li>
+                  <li onclick="next()">&#10148;</li>
+               </ul>
+            </div>
+            <div class="row">
+               <div class="option">
+                  <select class="selectBox" id="locality-dropdown" name="locality" onchange="changeBgColor(this.value)">
+                  </select>
+               </div>
+               <div class="search">
+                  <div class="SearchBox">
+                     <input  type="text" class="SearchBox-input" placeholder="Search....">
+                     <button class="SearchBox-button">
+                     <i class="SearchBox-icon  material-icons">search</i>
+                     </button>
+                  </div>
+               </div>
+               <div class="spinner">
+                  <p><span class="numeric-stepper">
+                     <button id="increment" onclick="stepper(this)" class="plus"> &#9650; </button>
+                     <input type="number" name="ns_textbox" size="2" min="0" step="1" value="1000" id="my-input" />
+                     <button id="decrement" onclick="stepper(this)" class="minus"> &#9660; </button>
+                     </span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
